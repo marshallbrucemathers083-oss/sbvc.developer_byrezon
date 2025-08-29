@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO SBVC.Dev</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #222;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        .tech-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 0;
+            background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%);
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            opacity: 0.9;
+            pointer-events: none;
+        }
+        .header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 48px;
+            padding-bottom: 24px;
+            z-index: 2;
+        }
+        .slideshow-container {
+            position: relative;
+            width: 480px;
+            max-width: 95vw;
+            height: 240px;
+            margin-bottom: 24px;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 2px 8px rgba(25, 118, 210, 0.10);
+            background: #fff;
+        }
+        .logo-overlay {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            z-index: 2;
+            background: rgba(255,255,255,0.85);
+            border-radius: 16px;
+            padding: 6px 10px 6px 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            transition: background 0.2s;
+        }
+        .logo-overlay:hover {
+            background: rgba(255,255,255,1);
+        }
+        .logo {
+            height: 48px;
+            width: 48px;
+            border-radius: 12px;
+            object-fit: contain;
+            background: #fff;
+        }
+        .slide {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0; top: 0;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 32px;
+            filter: brightness(0.92) contrast(1.08) saturate(1.1);
+        }
+        .fade {
+            animation: fadeEffect 1s;
+        }
+        @keyframes fadeEffect {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+        .judul {
+            color: #1976d2;
+            font-size: 3.2rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            margin: 0;
+            margin-top: 12px;
+            text-shadow: 0 4px 24px rgba(25,118,210,0.10), 0 2px 8px rgba(0,0,0,0.10);
+            z-index: 2;
+            text-align: center;
+        }
+        .main-content {
+            max-width: 800px;
+            margin: 40px auto 32px auto;
+            background: rgba(255,255,255,0.97);
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(25,118,210,0.08), 0 2px 12px rgba(0,0,0,0.06);
+            padding: 40px 32px;
+            z-index: 2;
+            position: relative;
+        }
+        h2 {
+            color: #0d47a1;
+            margin-top: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 700px) {
+            .header {
+                padding-top: 24px;
+            }
+            .slideshow-container {
+                width: 98vw;
+                height: 160px;
+                border-radius: 18px;
+            }
+            .logo-overlay {
+                top: 8px;
+                left: 8px;
+                border-radius: 10px;
+                padding: 3px 6px 3px 3px;
+            }
+            .logo {
+                height: 32px;
+                width: 32px;
+                border-radius: 8px;
+            }
+            .judul {
+                font-size: 2.1rem;
+                margin-top: 8px;
+            }
+            .main-content {
+                padding: 18px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tech-bg"></div>
+    <header class="header">
+        <div class="slideshow-container">
+            <a href="https://smkn1bantul.sch.id/" target="_blank" class="logo-overlay">
+                <img src="https://smkn1bantul.sch.id/logo.png" alt="Logo Sekolah" class="logo">
+            </a>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Teknologi 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Teknologi 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Teknologi 3">
+            </div>
+        </div>
+        <h1 class="judul">Welcome to SBVC.Dev by Rezon </h1>
+    </header>
+    <main class="main-content">
+        <section>
+            <h2>Apa itu SBVC.dev?</h2>
+            <p>
+             SABAVOSCHO(SBVC) adalah nama lain dari Sekolah Menengah Kejuruan Negeri 1 Bantul yang berdiri pada tahun
+             January 1, 1968 di Sabdodadi Bantu DIY. Salah satu jurusan yang populer di sekolah tersebut adalah jurusan
+                Rekayasa Perangkat Lunak (RPL) yang mempelajari tentang pemrograman komputer. Selain itu ada jurusan yang 
+                tak kalah populer yatu Teknik Komputer dan Jaringan (TKJ) yang mempelajari tentang jaringan komputer dan masih
+                banyak lagi jurusan yang ada di SMKN 1 Bantul. SBVC.Dev adalah singkatan dari Sabavoscho Developer,
+                yang merupakan komunitas anak anak berjurusan Rekayasa Perangkat Lunak yang berasal dari SMKN 1 Bantul.
+                SBVC.Dev adalah sebuah komunitas pengembang perangkat lunak yang berfokus pada pengembangan aplikasi web dan mobile.
+                Komunitas ini didirikan oleh sekelompok siswa dan guru dari jurusan Rekayasa Perangkat Lunak di SMKN 1 Bantul
+
+            </p>
+            <h2>Pemrograman SBVC.Dev</h2>
+            <p>
+                SBVC.Dev menggunakan berbagai bahasa pemrograman dan teknologi untuk mengembangkan aplikasi, di antaranya:
+                HTML, CSS, JavaScript, PHP, Python, Java, C#, dan lain-lain. Selain itu, komunitas ini juga menggunakan berbagai
+                framework dan library populer seperti React, Angular, Vue.js, Laravel, Django, dan lain-lain untuk mempercepat
+                proses pengembangan aplikasi. SBVC.Dev juga aktif dalam mengikuti berbagai kompetisi dan acara teknologi untuk mengasah
+                kemampuan dan memperluas jaringan. Komunitas ini terbuka untuk siapa saja yang tertarik dalam pengembangan perangkat lunak,
+                baik itu siswa, guru, maupun masyarakat umum. SBVC.Dev bertujuan untuk menjadi wadah bagi para pengembang muda untuk belajar, berbagi pengetahuan,
+                dan berkolaborasi dalam menciptakan solusi teknologi yang inovatif dan bermanfaat bagi masyarakat.
+            </p>
+            <!-- ...existing code... -->
+<h2>Contoh Sederhana Bahasa Pemrograman</h2>
+<p>
+    Berikut adalah contoh sederhana dari beberapa bahasa pemrograman yang digunakan oleh SBVC.Dev:
+</p>
+<div style="display: flex; justify-content: center; margin: 32px 0;">
+    <!-- 
+        Jika gambar ada di folder yang sama dengan index.html, cukup tulis:
+        <img src="unnamed.png" alt="Foto SBVC.Dev" style="max-width: 350px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(25,118,210,0.15); object-fit: cover;">
+        
+        Jika gambar ingin diambil dari internet, ganti src dengan URL gambar online:
+        <img src="https://link-gambar-online.png" alt="Foto SBVC.Dev" style="max-width: 350px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(25,118,210,0.15); object-fit: cover;">
+    -->
+    <img src="unnamed.png" alt="Foto SBVC.Dev" style="max-width: 350px; width: 100%; border-radius: 16px; box-shadow: 0 2px 12px rgba(25,118,210,0.15); object-fit: cover;">
+</div>
+<!-- ...existing code... -->
+        
+
+
+        
+            
+            
+        </section>
+    </main>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2500);
+        }
+    </script>
+</body>
+</html>
